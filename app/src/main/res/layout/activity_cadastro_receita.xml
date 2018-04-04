@@ -4,24 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="br.com.senaijandira.smartcash.CadastroMovimentacao"
-    tools:showIn="@layout/activity_cadastro_movimentacao"
+    tools:context="br.com.senaijandira.smartcash.CadastroReceita"
     android:orientation="vertical">
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome"/>
+        android:text="Valor:"
+        android:textSize="20sp"
+        android:layout_marginTop="70dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descrição"/>
+        android:hint="Ex: 600,00"
+        android:id="@+id/txt_valor"/>
 
-    <Spinner
-        android:id="@+id/planets_spinner"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Salvar"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>

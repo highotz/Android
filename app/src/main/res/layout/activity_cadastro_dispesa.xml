@@ -4,38 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.senaijandira.smartcash.CadastroCategoria"
-    tools:showIn="@layout/activity_cadastro_categoria"
+    tools:context="br.com.senaijandira.smartcash.CadastroReceita"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nome:"
+        android:text="Valor:"
         android:textSize="20sp"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginTop="50dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ex: Transporte"
-        />
+        android:hint="Ex: 600,00"
+        android:id="@+id/txt_valor"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descrição"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"/>
-    <EditText
+        android:layout_marginTop="10dp"
+        android:text="Categoria:"
+        android:textSize="20dp" />
+
+    <Spinner
         android:layout_width="match_parent"
-        android:layout_height="70dp" />
+        android:layout_height="40dp"></Spinner>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Salvar"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"/>
+        android:text="Salvar"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>

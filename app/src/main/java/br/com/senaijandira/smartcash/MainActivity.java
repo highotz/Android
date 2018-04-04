@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
         floatingActionButton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CadastroCategoria.class );
+                Intent intent = new Intent(getApplicationContext(), CadastroReceita.class );
 
                 startActivity(intent);
 
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         });
         floatingActionButton2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CadastroCategoria.class );
+                Intent intent = new Intent(getApplicationContext(), CadastroDispesa.class );
 
                 startActivity(intent);
 
